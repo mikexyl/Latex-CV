@@ -26,6 +26,7 @@
 \newcommand{\CVTitle}{Mike Xy Liu CV updated in Dec 2020}
 \newcommand{\CVNote}{Mike Xy Liu CV updated in Dec 2020}
 \newcommand{\CVWebpage}{http://www.example.com/~johndoe}
+\renewcommand{\refname}{}  % For article class
 
 % PDF settings and properties.
 \hypersetup{
@@ -59,7 +60,7 @@ breaklinks}
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
-\usepackage[backend=biber, sorting=ynt, minnames=2]{biblatex} % 'ynt' sorts by year, name, title
+\usepackage[backend=biber, sorting=ynt, minnames=2, style=numeric]{biblatex} % 'ynt' sorts by year, name, title
 \addbibresource{ref.bib} % Replace with your .bib file
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,7 +114,7 @@ Vision For Robotics Lab \href{https://v4rl.com/}{\color{blue}v4rl.com}
 \BulletItem
 MS. in Aerospace Engineering~(Control \& Dynamic Systems)
 \hfill
-\DatestampYM{2022}{08}
+\DatestampYM{2022}{08} -- \DatestampYM{2023}{09}
 
 \BigGap
 \Entry
@@ -129,7 +130,7 @@ M.Sc. in
 \begin{Detail}
 \SubBulletItem
 Dissertation:
-{\href{https://www.researchgate.net/publication/340996925_QUANTITATIVE_TRAJECTORY_EVALUATION_CRITERION_AND_LONG-TERM_ENHANCEMENT_FOR_MULTI-ROBOT_SLAM}{\color{blue}{Quantitative Trajectory Evaluation Criterion and Long-term Enhancement for Multi-Robot SLAM}}\cite{xiangyu2019quantitative}}
+{Quantitative Trajectory Evaluation Criterion and Long-term Enhancement for Multi-Robot SLAM}
 \SubBulletItem
 Adviser:
 Prof. Danwei Wang
@@ -281,7 +282,7 @@ For contest project: panel-ball controlling device
 in RoboMasters National University Robot Contest,
 MoE China \& DJI
 \BulletItem
-For contest project: RM series robots.\cite{yijie2016}
+For contest project: RM series robots.
 \hfill
 \DatestampYM{2015}{10} --
 \DatestampYM{2016}{8}
@@ -319,91 +320,91 @@ For contest project: RM series robots.\cite{yijie2016}
 %% RESEARCH EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\Section
-{Projects}
-{Projects}
-{PDF:Projects}
+% \Section
+% {Projects}
+% {Projects}
+% {PDF:Projects}
 
-\Entry
-{\textbf{Computer Vision Group}},
-State Key Lab of CAD\&CG, Zhejiang University
+% \Entry
+% {\textbf{Computer Vision Group}},
+% State Key Lab of CAD\&CG, Zhejiang University
 
-\BulletItem
-Research Assistant
-\hfill
-\DatestampYM{2020}{07} --
-\DatestampYM{2021}{04}
-\begin{Detail}
-\SubBulletItem
-Project:
-Multi Robot Localization, Reconstruction and Exploration~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi}).
-\SubBulletItem
-Brief:
-We are exploring and pushing the limit of multi robot dense reconstruction and navigation system with higher performance on mapping and functionality of complicated exploration and searching task.
-By integrating recent multi robot localization and optimization methods, and bringing in a new map compression algorithm, my paper proposes a new system able to build dense map with global consistency, robustness and work under less than 100 KB/s of bandwidth.
+% \BulletItem
+% Research Assistant
+% \hfill
+% \DatestampYM{2020}{07} --
+% \DatestampYM{2021}{04}
+% \begin{Detail}
+% \SubBulletItem
+% Project:
+% Multi Robot Localization, Reconstruction and Exploration~\cite{xiangyu2021coxgraph}~(\textbf{First Author, IROS 2021 Best Paper Award Finalist on Safety, Security, and Rescue Robotics in memory of Motohiro Kisoi}).
+% \SubBulletItem
+% Brief:
+% We are exploring and pushing the limit of multi robot dense reconstruction and navigation system with higher performance on mapping and functionality of complicated exploration and searching task.
+% By integrating recent multi robot localization and optimization methods, and bringing in a new map compression algorithm, my paper proposes a new system able to build dense map with global consistency, robustness and work under less than 100 KB/s of bandwidth.
 
-\SubBulletItem
-Supervisors:
-Prof. Guofeng Zhang
-\SubBulletItem
-Focus:
-Multi-Robot SLAM, Cross-Robot Localization, Dense Reconstruction, Navigation
-\end{Detail}
+% \SubBulletItem
+% Supervisors:
+% Prof. Guofeng Zhang
+% \SubBulletItem
+% Focus:
+% Multi-Robot SLAM, Cross-Robot Localization, Dense Reconstruction, Navigation
+% \end{Detail}
 
-\Entry
-{\textbf{Robotics Lab, Nanyang Technological University, Singapore}}
+% \Entry
+% {\textbf{Robotics Lab, Nanyang Technological University, Singapore}}
 
-\BulletItem
-Research Associate
-\hfill
-\DatestampYM{2021}{07} --
-\DatestampYM{2022}{07}
-\begin{Detail}
-\SubBulletItem
-Project 1:
-AESV: Autonomous Environmental Service Vehicle
-\SubBulletItem
-Brief:
-Cooperating with major network providers, tourist sights and multiply client companies, we are building the next-generation vehicle teleoperation platform.
-With our partners providing island-wide 5G network and vehicles, our platform is able to teleoperate vehicles across the island, with low-latency image and 3D map transmission, even real-time force feedback.
-We are exploring different application scenarios and vehicles for our teleoperation technology, and standardize our platform and its installation process on vehicle.
-\SubBulletItem 
-Project 2:
-Distributed LiDAR: low-cost full-angle obstacle detection sensor module.
-\SubBulletItem
-Brief:
-The most common way to achieve full-angle obstacle detection is to mount lidar or several depth cameras, which turn to be less cost-effective and require high computation resources.
-This project is aimed at development of new sensor modules catering users' demand of cheap, light-weight and flexible solution to obstacle detection.
-Several modules are already ready-to-ship.
-One module with flexible design can adhere to desired surfaces.
-One module with optical fibre conducting light, of which 32 fibres can be embedded in UAV propeller protectors.
-This project has international patents in several countries.
-\end{Detail}
+% \BulletItem
+% Research Associate
+% \hfill
+% \DatestampYM{2021}{07} --
+% \DatestampYM{2022}{07}
+% \begin{Detail}
+% \SubBulletItem
+% Project 1:
+% AESV: Autonomous Environmental Service Vehicle
+% \SubBulletItem
+% Brief:
+% Cooperating with major network providers, tourist sights and multiply client companies, we are building the next-generation vehicle teleoperation platform.
+% With our partners providing island-wide 5G network and vehicles, our platform is able to teleoperate vehicles across the island, with low-latency image and 3D map transmission, even real-time force feedback.
+% We are exploring different application scenarios and vehicles for our teleoperation technology, and standardize our platform and its installation process on vehicle.
+% \SubBulletItem 
+% Project 2:
+% Distributed LiDAR: low-cost full-angle obstacle detection sensor module.
+% \SubBulletItem
+% Brief:
+% The most common way to achieve full-angle obstacle detection is to mount lidar or several depth cameras, which turn to be less cost-effective and require high computation resources.
+% This project is aimed at development of new sensor modules catering users' demand of cheap, light-weight and flexible solution to obstacle detection.
+% Several modules are already ready-to-ship.
+% One module with flexible design can adhere to desired surfaces.
+% One module with optical fibre conducting light, of which 32 fibres can be embedded in UAV propeller protectors.
+% This project has international patents in several countries.
+% \end{Detail}
 
 
 
 
 % \newpage
-\Entry
-{\textbf{JD.COM X Department}}, JD.COM
+% \Entry
+% {\textbf{JD.COM X Department}}, JD.COM
 
-\BulletItem
-Internship, Embedded Algorithm Engineer
-\hfill
-\DatestampYM{2017}{09} --
-\DatestampYM{2017}{12}
-\begin{Detail}
-	\SubBulletItem
-	Project:
-	Auto-Warehouse AGV
-	\SubBulletItem
-	Work:
-	Joined the R\&D group of auto-warehouse AGVs, help to design and debug AGVs for smart logistic application.
-	Our group in JD X department was responsible for developing, maintaining and upgrading our JDX auto-warehouse AGVs, which are successfully deployed in JD warehouses in several major cities in China.
-	\SubBulletItem
-	Focus:
-	Smart Logistics, AGV.
-\end{Detail}
+% \BulletItem
+% Internship, Embedded Algorithm Engineer
+% \hfill
+% \DatestampYM{2017}{09} --
+% \DatestampYM{2017}{12}
+% \begin{Detail}
+% 	\SubBulletItem
+% 	Project:
+% 	Auto-Warehouse AGV
+% 	\SubBulletItem
+% 	Work:
+% 	Joined the R\&D group of auto-warehouse AGVs, help to design and debug AGVs for smart logistic application.
+% 	Our group in JD X department was responsible for developing, maintaining and upgrading our JDX auto-warehouse AGVs, which are successfully deployed in JD warehouses in several major cities in China.
+% 	\SubBulletItem
+% 	Focus:
+% 	Smart Logistics, AGV.
+% \end{Detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% OTHER WORK EXPERIENCE %%
@@ -558,7 +559,7 @@ Internship, Embedded Algorithm Engineer
 
 \nocite{*}
 
-\printbibliography[title=Publications]
+\printbibliography[]
 
 % \endgroup
 
